@@ -1,0 +1,2 @@
+class DeskschedulesController < ApplicationController
+end
