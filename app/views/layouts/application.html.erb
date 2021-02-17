@@ -12,7 +12,8 @@
   <body>
     <% if user_signed_in? %>
       <p>Your are signed in!</p>
-      <%= link_to 'ログアウト', new_user_session_path  %>
+      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete  %>
+      <%= link_to 'アカウント情報を編集', edit_user_registration_path  %>
     <% else %>
       <p>Your are not signed in!</p>
       <%= link_to "アカウントを作る", new_user_registration_path  %>
