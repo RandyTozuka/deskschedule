@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <% if user_signed_in? %>
+      <p>Your are signed in!</p>
+      <%= link_to 'ログアウト', new_user_session_path  %>
+    <% else %>
+      <p>Your are not signed in!</p>
+      <%= link_to "アカウントを作る", new_user_registration_path  %>
+      <%= link_to 'ログインする', destroy_user_session_path  %>
+    <% end %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>

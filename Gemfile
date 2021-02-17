@@ -53,6 +53,9 @@ end
 #----------後付けGems--------------------------------------------------------
 #pgはrails new した時点で、"rails new deskschedule -d postgresql" で対応済み
 
+# エラーになるのでコメントアウト
+# gem 'racc', '~> 1.5', '>= 1.5.2'
+
 #devise
 gem 'devise'
 #"sass-rails"はデフォルトでインストール済み
